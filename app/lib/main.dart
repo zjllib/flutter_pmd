@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ledText',
-      theme: ThemeData(
-        primaryColor: Colors.black,
-      ),
+//      theme: ThemeData.light(),
       home: SetPage(),
+      routes:{
+//      Routes.home:
+      } ,
     );
   }
 }

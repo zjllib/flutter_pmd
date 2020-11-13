@@ -2,9 +2,9 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:app/util/app.dart';
-import 'package:app/util/color_picker.dart';
-import 'package:app/util/myslider.dart';
+import 'package:app/model/app.dart';
+import 'file:///F:/APP/flutter_pmd/app/lib/widgets/color_picker.dart';
+import 'file:///F:/APP/flutter_pmd/app/lib/widgets/myslider.dart';
 import 'package:flustars/flustars.dart';
 import 'home.dart';
 
@@ -34,12 +34,13 @@ class _SetPageState extends State<SetPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "设置",
-        ),
-        centerTitle: true,
-      ),
+//      appBar: AppBar(
+//        title: Text(
+//          "设置",
+//        ),
+//        centerTitle: true,
+//        backgroundColor: App.bgColor,
+//      ),
       body: ListView(
         children: <Widget>[
           Container(
@@ -178,7 +179,7 @@ class _SetPageState extends State<SetPage> with TickerProviderStateMixin {
             ),
           ),
           RaisedButton(
-            child: Text("START SHOW",style: TextStyle(letterSpacing: 1,wordSpacing:10,fontSize: 24,color: Colors.white ),),
+            child: Text("SHOW",style: TextStyle(letterSpacing: 1,wordSpacing:10,fontSize: 24,color: Colors.white ),),
             color: Colors.blueGrey,
             hoverColor: Colors.black,
             splashColor: Colors.black,

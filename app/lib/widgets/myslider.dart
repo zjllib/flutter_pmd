@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'app.dart';
+import '../model/app.dart';
 
 typedef ValueChanged<T> = void Function(T value);
 

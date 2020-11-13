@@ -45,7 +45,7 @@ class _ColorPickersState extends State<ColorPickers> {
                   child: ColorPicker(
                     pickerColor: pickerColor,
                     onColorChanged: onChangeColor,
-                    enableLabel: true,
+//                    enableLabel: true,
                     pickerAreaHeightPercent: 0.8,
                   ),
                 ),
