@@ -1,6 +1,5 @@
-
-
-class Routes {
-  static final page_home = '/home';
-  static final page_set = '/set';
+//页面路径
+class pages {
+  static final home = '/home';
+  static final set = '/set';
 }

@@ -3,10 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:app/model/app.dart';
-import 'file:///F:/APP/flutter_pmd/app/lib/widgets/color_picker.dart';
-import 'file:///F:/APP/flutter_pmd/app/lib/widgets/myslider.dart';
+import 'package:app/widgets/color_picker.dart';
+import 'package:app/widgets/myslider.dart';
 import 'package:flustars/flustars.dart';
 import 'home.dart';
+import 'package:app/routes.dart';
 
 //**设置页**//
 class SetPage extends StatefulWidget {
@@ -179,17 +180,13 @@ class _SetPageState extends State<SetPage> with TickerProviderStateMixin {
             ),
           ),
           RaisedButton(
-            child: Text("SHOW",style: TextStyle(letterSpacing: 1,wordSpacing:10,fontSize: 24,color: Colors.white ),),
+            child: Text("SHOW",style: TextStyle(letterSpacing: 1,wordSpacing:10,fontSize: 45,color: Colors.white ),),
             color: Colors.blueGrey,
             hoverColor: Colors.black,
             splashColor: Colors.black,
             highlightColor: Colors.black,
             onPressed: (){
-              Navigator.push(
-              context,
-              new MaterialPageRoute(
-              builder: (context) => new HomePage(),
-              ));
+               Navigator.pushNamed(context, pages.home);
               })
         ],
       ),

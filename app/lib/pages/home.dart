@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:app/model/app.dart';
-import 'file:///F:/APP/flutter_pmd/app/lib/widgets/myslider.dart';
+import 'package:app/widgets/myslider.dart';
 
 class HomePage extends StatelessWidget {
   @override

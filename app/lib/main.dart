@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:app/pages/set.dart';
+import 'package:app/pages/home.dart';
+import 'package:app/routes.dart';
 //import 'package:flutter_ad_plugin/flutter_ad_plugin.dart';
 
 
@@ -12,10 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ledText',
 //      theme: ThemeData.light(),
-      home: SetPage(),
+//      home: SetPage(),
+//      debugShowMaterialGrid: true,
+//      showPerformanceOverlay: true,
+      color: Colors.blue,
       routes:{
+        pages.home:(context)=>HomePage(),
+        pages.set:(context)=>SetPage(),
 //      Routes.home:
       } ,
+      initialRoute: pages.set,
     );
   }
 }
